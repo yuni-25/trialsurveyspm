@@ -1,0 +1,818 @@
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   OPEN SANS
+========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #071e40;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   FORCE OPEN SANS
+========================================================= */
+
+body,
+body *,
+#root,
+#root *,
+.sd-root-modern,
+.sd-root-modern *,
+.sv-root-modern,
+.sv-root-modern *,
+.sd-question,
+.sd-question *,
+.sd-element,
+.sd-element *,
+.sd-input,
+.sd-input *,
+.sd-selectbase,
+.sd-selectbase *,
+.sd-btn,
+.sd-btn *,
+.sd-action,
+.sd-action *,
+.sd-navigation,
+.sd-navigation *,
+.sd-header,
+.sd-header * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   SURVEY WRAPPER
+========================================================= */
+
+.survey-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  background: #071e40;
+}
+
+/* =========================================================
+   CUSTOM PROGRESS BAR
+   FULL WIDTH - PALING ATAS
+========================================================= */
+
+.custom-progress {
+  width: 100%;
+  height: 5px;
+
+  margin: 0;
+  padding: 0;
+
+  background: #667085;
+
+  border: none;
+  border-radius: 0;
+
+  overflow: hidden;
+
+  position: relative;
+  z-index: 100;
+}
+
+/* =========================================================
+   PROGRESS FILL
+========================================================= */
+
+.custom-progress-fill {
+  height: 100%;
+
+  background: #b8c0ca;
+
+  border: none;
+  border-radius: 0;
+
+  transition: width 0.4s ease;
+
+  min-width: 0;
+}
+
+/* =========================================================
+   SURVEYJS ROOT
+========================================================= */
+
+.sd-root-modern,
+.sv-root-modern {
+  background: transparent !important;
+
+  margin-top: 0 !important;
+}
+
+/* =========================================================
+   QUESTION CARD
+========================================================= */
+
+.sd-element--with-frame {
+  border-radius: 22px !important;
+}
+
+/* =========================================================
+   QUESTION TITLE
+========================================================= */
+
+.sd-question__title,
+.sd-question__title *,
+.sd-element__title,
+.sd-element__title * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+
+  font-weight: 700 !important;
+
+  color: #071e40 !important;
+}
+
+/* =========================================================
+   QUESTION DESCRIPTION
+========================================================= */
+
+.sd-question__description,
+.sd-question__description * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+
+  color: #071e40 !important;
+}
+
+/* =========================================================
+   GENERAL QUESTION TEXT
+========================================================= */
+
+.sd-question,
+.sd-question *,
+.sd-element,
+.sd-element * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.sd-input,
+.sd-text,
+.sd-text input,
+.sd-textarea,
+.sd-input input,
+.sd-input textarea {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+
+  color: #071e40 !important;
+}
+
+/* =========================================================
+   DROPDOWN
+   MAIN FIELD
+========================================================= */
+
+.sd-dropdown {
+  background: #f4f6f9 !important;
+
+  color: #071e40 !important;
+
+  border: 1px solid #d5dbe3 !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   DROPDOWN SELECTED VALUE
+========================================================= */
+
+.sd-dropdown__value,
+.sd-dropdown__value * {
+  color: #071e40 !important;
+
+  background: transparent !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   DROPDOWN PLACEHOLDER
+========================================================= */
+
+.sd-dropdown__value--placeholder,
+.sd-dropdown__value--placeholder * {
+  color: #8291a8 !important;
+
+  background: transparent !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   DROPDOWN ARROW / BUTTON
+   KOTAK DI SEBELAH "SELECT..."
+   
+   IMPORTANT:
+   Area ini harus PUTIH.
+   Jangan sampai ikut menjadi navy.
+========================================================= */
+
+.sd-dropdown__button,
+.sd-dropdown__button:hover,
+.sd-dropdown__button:focus,
+.sd-dropdown__button:active,
+.sd-dropdown__button:focus-visible,
+.sd-multiselect__button,
+.sd-multiselect__button:hover,
+.sd-multiselect__button:focus,
+.sd-multiselect__button:active,
+.sd-multiselect__button:focus-visible {
+  background: #ffffff !important;
+
+  color: #071e40 !important;
+
+  border: none !important;
+
+  box-shadow: none !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   DROPDOWN ARROW / ICON
+   Panah tetap NAVY
+========================================================= */
+
+.sd-dropdown__button svg,
+.sd-dropdown__button svg *,
+.sd-dropdown__button .sv-svg-icon,
+.sd-dropdown__button .sv-svg-icon *,
+.sd-multiselect__button svg,
+.sd-multiselect__button svg *,
+.sd-multiselect__button .sv-svg-icon,
+.sd-multiselect__button .sv-svg-icon * {
+  background: transparent !important;
+
+  color: #071e40 !important;
+
+  fill: #071e40 !important;
+
+  stroke: #071e40 !important;
+}
+
+/* =========================================================
+   DROPDOWN BUTTON WRAPPER
+   Prevent navy background dari parent icon area
+========================================================= */
+
+.sd-dropdown__button-container,
+.sd-dropdown__button-container:hover,
+.sd-dropdown__button-container:focus,
+.sd-dropdown__button-container:active {
+  background: transparent !important;
+
+  box-shadow: none !important;
+}
+
+/* =========================================================
+   MULTI-SELECT
+========================================================= */
+
+.sd-multiselect {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   MULTI-SELECT SELECTED ITEM / TAG
+========================================================= */
+
+.sd-multiselect__item {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+
+  color: #ffffff !important;
+
+  background: #071e40 !important;
+}
+
+/* Text dalam selected item */
+
+.sd-multiselect__item *,
+.sd-multiselect__item span {
+  color: #ffffff !important;
+
+  background: transparent !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   MULTI-SELECT REMOVE / X ICON
+========================================================= */
+
+.sd-multiselect__item svg,
+.sd-multiselect__item svg *,
+.sd-multiselect__item .sv-svg-icon,
+.sd-multiselect__item .sv-svg-icon * {
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  fill: #ffffff !important;
+
+  stroke: #ffffff !important;
+}
+
+/* =========================================================
+   DROPDOWN POPUP
+========================================================= */
+
+.sd-popup,
+.sd-popup-modern,
+.sv-popup,
+.sv-popup__container,
+.sd-popup__container {
+  background: #ffffff !important;
+
+  color: #071e40 !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   DROPDOWN LIST
+========================================================= */
+
+.sd-list,
+.sd-list *,
+.sd-list__container,
+.sd-dropdown__popup,
+.sd-dropdown__list {
+  background: #ffffff !important;
+
+  color: #071e40 !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   DROPDOWN OPTIONS
+========================================================= */
+
+.sd-list__item,
+.sd-item,
+.sd-selectbase__item {
+  background: #ffffff !important;
+
+  color: #071e40 !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+
+  font-weight: 400 !important;
+}
+
+/* =========================================================
+   TEXT DI DALAM OPTION
+========================================================= */
+
+.sd-list__item *,
+.sd-item *,
+.sd-selectbase__item * {
+  color: #071e40 !important;
+
+  background: transparent !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   DROPDOWN OPTION HOVER
+========================================================= */
+
+.sd-list__item:hover,
+.sd-item:hover,
+.sd-selectbase__item:hover {
+  background: #e8edf3 !important;
+
+  color: #071e40 !important;
+}
+
+.sd-list__item:hover *,
+.sd-item:hover *,
+.sd-selectbase__item:hover * {
+  background: transparent !important;
+
+  color: #071e40 !important;
+}
+
+/* =========================================================
+   DROPDOWN SELECTED OPTION
+========================================================= */
+
+.sd-list__item--selected,
+.sd-item--selected,
+.sd-selectbase__item--selected {
+  background: #071e40 !important;
+
+  color: #ffffff !important;
+}
+
+.sd-list__item--selected *,
+.sd-item--selected *,
+.sd-selectbase__item--selected * {
+  background: transparent !important;
+
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   DROPDOWN SEARCH / FILTER
+========================================================= */
+
+.sd-dropdown__filter,
+.sd-dropdown__filter input,
+.sd-popup input,
+.sd-popup textarea {
+  background: #ffffff !important;
+
+  color: #071e40 !important;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   SEARCH PLACEHOLDER
+========================================================= */
+
+.sd-dropdown__filter input::placeholder,
+.sd-popup input::placeholder {
+  color: #8291a8 !important;
+}
+
+/* =========================================================
+   RADIO / CHECKBOX TEXT
+========================================================= */
+
+.sd-item__control-label,
+.sd-item__control-label *,
+.sd-selectbase__label,
+.sd-selectbase__label {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+
+  color: #071e40 !important;
+}
+
+/* =========================================================
+   CHECKBOX
+   DEFAULT / UNCHECKED
+========================================================= */
+
+.sd-checkbox__decorator,
+.sd-item__decorator {
+  background: #ffffff !important;
+
+  border: 2px solid #d5dbe3 !important;
+}
+
+/* =========================================================
+   CHECKBOX
+   CHECKED / SELECTED
+========================================================= */
+
+.sd-item--checked .sd-checkbox__decorator,
+.sd-item--checked .sd-item__decorator,
+.sd-checkbox--checked .sd-checkbox__decorator,
+.sd-checkbox__decorator.sd-checkbox--checked {
+  background: #071e40 !important;
+
+  border-color: #071e40 !important;
+}
+
+/* =========================================================
+   CHECKMARK
+========================================================= */
+
+.sd-item--checked .sd-checkbox__decorator::after,
+.sd-checkbox--checked .sd-checkbox__decorator::after {
+  border-color: #ffffff !important;
+}
+
+/* =========================================================
+   CHECKBOX HOVER
+========================================================= */
+
+.sd-item:hover .sd-checkbox__decorator,
+.sd-item:hover .sd-item__decorator {
+  border-color: #071e40 !important;
+}
+
+/* =========================================================
+   SELECTED CHECKBOX ROW
+========================================================= */
+
+.sd-item--checked {
+  background: #e8edf3 !important;
+}
+
+/* =========================================================
+   SELECTED CHECKBOX TEXT
+========================================================= */
+
+.sd-item--checked .sd-item__control-label,
+.sd-item--checked .sd-item__control-label * {
+  color: #071e40 !important;
+}
+
+/* =========================================================
+   RADIO BUTTON
+   DEFAULT
+========================================================= */
+
+.sd-radio__decorator {
+  background: #ffffff !important;
+
+  border: 2px solid #d5dbe3 !important;
+}
+
+/* =========================================================
+   RADIO BUTTON
+   SELECTED
+========================================================= */
+
+.sd-item--checked .sd-radio__decorator,
+.sd-radio--checked .sd-radio__decorator {
+  background: #071e40 !important;
+
+  border-color: #071e40 !important;
+}
+
+/* =========================================================
+   BUTTON FONT
+========================================================= */
+
+.sd-action,
+.sd-action *,
+.sd-btn,
+.sd-btn * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   NAVIGATION
+   BUTTON DI SEBELAH KANAN
+========================================================= */
+
+.sd-navigation {
+  width: 100% !important;
+
+  display: flex !important;
+
+  justify-content: flex-end !important;
+
+  align-items: center !important;
+
+  gap: 10px !important;
+}
+
+/* =========================================================
+   SURVEYJS NAVIGATION CONTAINER
+========================================================= */
+
+.sd-navigation__buttons,
+.sd-navigation__buttons-container {
+  width: 100% !important;
+
+  display: flex !important;
+
+  justify-content: flex-end !important;
+
+  align-items: center !important;
+
+  gap: 10px !important;
+}
+
+/* =========================================================
+   PREVIOUS / NEXT / COMPLETE
+========================================================= */
+
+.sd-navigation__prev-btn,
+.sd-navigation__next-btn,
+.sd-navigation__complete-btn {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+
+  margin-left: 0 !important;
+}
+
+/* =========================================================
+   PREVIOUS / NEXT BUTTON ALIGNMENT
+========================================================= */
+
+.sd-navigation__prev-btn,
+.sd-navigation__next-btn,
+.sd-navigation__complete-btn {
+  flex: 0 0 auto !important;
+}
+
+/* =========================================================
+   ACTION BUTTON
+========================================================= */
+
+.sd-action--primary,
+.sd-btn--action {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   ERROR / VALIDATION
+========================================================= */
+
+.sd-question__erbox,
+.sd-question__erbox *,
+.sd-question__error,
+.sd-question__error * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   REQUIRED STAR
+========================================================= */
+
+.sd-question__required-text {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   START / COMPLETE PAGE TEXT
+========================================================= */
+
+.sd-page__title,
+.sd-page__title *,
+.sd-page__description,
+.sd-page__description * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  /* -------------------------------------------------------
+     Progress
+  ------------------------------------------------------- */
+
+  .custom-progress {
+    width: 100%;
+
+    height: 4px;
+  }
+
+  .custom-progress-fill {
+    height: 4px;
+  }
+
+  /* -------------------------------------------------------
+     Navigation
+  ------------------------------------------------------- */
+
+  .sd-navigation,
+  .sd-navigation__buttons,
+  .sd-navigation__buttons-container {
+    width: 100% !important;
+
+    display: flex !important;
+
+    justify-content: flex-end !important;
+
+    align-items: center !important;
+
+    gap: 8px !important;
+  }
+
+  /* -------------------------------------------------------
+     Navigation buttons
+  ------------------------------------------------------- */
+
+  .sd-navigation__prev-btn,
+  .sd-navigation__next-btn,
+  .sd-navigation__complete-btn {
+    flex: 0 0 auto !important;
+
+    margin-left: 0 !important;
+  }
+
+  /* -------------------------------------------------------
+     Dropdown arrow button
+  ------------------------------------------------------- */
+
+  .sd-dropdown__button,
+  .sd-multiselect__button {
+    background: #ffffff !important;
+
+    color: #071e40 !important;
+  }
+}
+
+/* =========================================================
+   FIX DROPDOWN CHEVRON BUTTON
+   Kotak di sebelah kanan "Select..."
+========================================================= */
+
+.sd-dropdown_chevron-button,
+.sd-dropdown_chevron-button:hover,
+.sd-dropdown_chevron-button:focus,
+.sd-dropdown_chevron-button:active,
+.sd-dropdown_chevron-button:focus-visible {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+
+  border: none !important;
+  box-shadow: none !important;
+
+  color: #071e40 !important;
+}
+
+/* =========================================================
+   DROPDOWN CHEVRON ICON
+   Panah tetap navy
+========================================================= */
+
+.sd-dropdown_chevron-button-svg {
+  background: transparent !important;
+
+  color: #071e40 !important;
+
+  fill: #071e40 !important;
+
+  stroke: #071e40 !important;
+}
+
+/* SVG <use> yang dipakai SurveyJS */
+
+.sd-dropdown_chevron-button-svg use {
+  fill: #071e40 !important;
+
+  color: #071e40 !important;
+
+  stroke: #071e40 !important;
+}
+
+/* =========================================================
+   TAGBOX / MULTI-SELECT
+   Tetap putih untuk area tombol panah
+========================================================= */
+
+.sd-tagbox .sd-dropdown_chevron-button,
+.sd-tagbox .sd-dropdown_chevron-button:hover,
+.sd-tagbox .sd-dropdown_chevron-button:focus,
+.sd-tagbox .sd-dropdown_chevron-button:active {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+
+  border: none !important;
+
+  box-shadow: none !important;
+}
+
+/* =========================================================
+   JANGAN BIARKAN PARENT MEMBERI BACKGROUND NAVY
+========================================================= */
+
+.sd-input.sd-dropdown .sd-dropdown_chevron-button {
+  background-color: #ffffff !important;
+}
+
+/* =========================================================
+   ICON DALAM MULTI-SELECT
+========================================================= */
+
+.sd-input.sd-tagbox .sd-dropdown_chevron-button svg,
+.sd-input.sd-tagbox .sd-dropdown_chevron-button svg * {
+  background: transparent !important;
+
+  fill: #071e40 !important;
+
+  stroke: #071e40 !important;
+}
